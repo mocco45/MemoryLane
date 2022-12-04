@@ -862,23 +862,27 @@ h6 {
     border-color: #222222;
 }
 
-/* #registry button {
+#registry button {
     display: inline-block;
     padding: 8px 30px;
     border-radius: 30px;
+    background:#FF69B4;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
-        
     border: none;
     cursor: pointer;
 }
 
 #registry button:hover {
-    color: none;
-    background:none;
-} */
+    color: #FF69B4;
+    background:#222222;
+}
+#team button{
+    border-radius: 30px;
+    border-color:#FF69B4 ;
+}
 
 /* ================================================= */
 /* ----------------- RSVP Section ------------------ */

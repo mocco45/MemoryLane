@@ -164,94 +164,57 @@ if ($result->num_rows > 0)
                         </div>
                            </div>
                                     
-
+                                 <div id="team"> 
                                 <div class="row justify-content-center my-4 mx-auto">
                                     <div class="col-md-4 col-sm-12 pb-3">
-                                        <a href="">
-                                            <button  class="btn btn-outline-primary col-12">photograph and cameraman</button>
+                                        <a href="http://www.instagram.com/<?php echo $row['photographer'] ?>" target="_blank">
+                                            <button  class="btn col-12">photographer & Videographer</button>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <button type="button" class=" btn btn-outline-primary col-12">Primary</button>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center my-4 mx-auto">
-                                    <div class="col-md-4 col-sm-12 pb-3">
-                                        <a href="">
-                                            <button  class="btn btn-outline-primary col-12">photograph and cameraman</button>
+                                        <a href="http://www.instagram.com/<?php echo $row['carRental'] ?>" target="_blank">
+                                            <button type="button" class=" btn col-12">Cars Rental</button>
                                         </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <button type="button" class=" btn btn-outline-primary col-12">Primary</button>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center my-4 mx-auto">
                                     <div class="col-md-4 col-sm-12 pb-3">
-                                        <a href="">
-                                            <button  class="btn btn-outline-primary col-12">photograph and cameraman</button>
+                                        <a href="http://www.instagram.com/<?php echo $row['decor'] ?>" target="_blank">
+                                            <button  class="btn col-12">Decor</button>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <button type="button" class=" btn btn-outline-primary col-12">Primary</button>
+                                        <a href="http://www.instagram.com/<?php echo $row['suitDresser'] ?>" target="_blank">
+                                            <button type="button" class=" btn col-12">Groom's Suit Dresser</button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center my-4 mx-auto">
                                     <div class="col-md-4 col-sm-12 pb-3">
-                                        <a href="">
-                                            <button  class="btn btn-outline-primary col-12">photograph and cameraman</button>
+                                        <a href="http://www.instagram.com/<?php echo $row['dressDresser'] ?>" target="_blank">
+                                            <button  class="btn col-12">Bride's Dress Dresser </button>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <button type="button" class=" btn btn-outline-primary col-12">Primary</button>
+                                        <a href="http://www.instagram.com/<?php echo $row['venue'] ?>" target="_blank">
+                                            <button type="button" class=" btn col-12">Venue</button>
+                                        </a>
                                     </div>
                                 </div>
+                                <div class="row justify-content-center my-4 mx-auto">
+                                    <div class="col-md-4 col-sm-12 pb-3">
+                                        <a href="http://www.instagram.com/<?php echo $row['ceremony'] ?>" target="_blank">
+                                            <button  class="btn col-12">Master of Ceremony</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <a href="http://www.instagram.com/<?php echo $row['caterer'] ?>" target="_blank">
+                                            <button type="button" class=" btn col-12">Caterer</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div> 
 
-
-                            
-                            
-                            
-                            
-                            
-                            
-                            <!-- <form>
-                                <div class=" form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control"
-                                            placeholder="Photographer and videographer" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Cars Rental" />
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" placeholder="Decor" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Groom's Suit Dresser" />
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Bride's Dress Dresser" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Venue" />
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Master of Ceremony" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Caterer" />
-                                    </div>
-                                </div>
-                            </form> -->
-                        
-                   
-               
             </div>
         </section>
 
@@ -313,7 +276,7 @@ if ($result->num_rows > 0)
                                             placeholder="Relation with" />
                                     </div>
                                 </div>
-                                <div><button type="submit">Submit</button></div>
+                                <div><button  type="submit">Submit</button></div>
                             </form>
                         </div>
                     </div>

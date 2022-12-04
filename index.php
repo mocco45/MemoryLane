@@ -130,6 +130,50 @@
 
       </div>
     </section><!-- #services -->   
+    
+
+   <!--==========================
+      Pricing Section
+    ============================-->
+
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Pricing</h3>
+          <p>Pricing Plan</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="card">
+              <div class="card-header text-center">
+                <h4>Basic</h4>
+              </div>
+              <div class="card-header">
+                <h6 class="text-center">Basic plan</h6>
+                <p>For those appreciated plan</p>
+              </div>
+              <div class="card-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <a href="templ/standard1.php"><img src="home/img/2.jpg"width="100%"></a>
+            <h4 class="title"><a href="">Standard</a></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <a href="templ/premium.php"><img src="home/img/3.jpg"width="100%"></a>
+            <h4 class="title"><a href="">Premium</a></h4>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- #services -->   
 
     <!--==========================
       About Us Section
