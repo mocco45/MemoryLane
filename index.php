@@ -1,5 +1,19 @@
    <!DOCTYPE html>
 <html lang="en">
+  <style>
+   .list ul{
+    
+    list-style: none;
+  
+  
+  }      
+  .list ul li:before {
+    content: '✓';
+    margin-right: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+    }
+  </style>
 <head>
   <meta charset="utf-8">
   <title>INVITATION</title>
@@ -145,29 +159,96 @@
         </header>
 
         <div class="row">
-
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="card">
-              <div class="card-header text-center">
-                <h4>Basic</h4>
+              <div class="card-header text-center bg-dark">
+                <h4 class="card-title text-white "> <strong>Basic</strong> </h4>
               </div>
               <div class="card-header">
-                <h6 class="text-center">Basic plan</h6>
-                <p>For those appreciated plan</p>
+                <h6 class="text-center card-title"> <b>Basic plan</b></h6>
+                <p class="card-text mx-4">For those appreciated plan</p>
               </div>
-              <div class="card-body">
-
+              <div class="card-body list">
+                <ul>
+                  <li class="my-2">Customized wedding web page</li>
+                  <li class="my-2">RSVP registry</li>
+                  <li class="my-2">Event team/vendor links</li>
+                </ul>
+                <hr>
+                <div>
+                  <h2 class="text-center"><strong>70,000/= Tsh</strong></h2>
+                  <p class="text-center card-text">per month</p>
+                  <div class="row justify-content-center">
+                    <button type="button" class="btn btn-outline-dark text-uppercase ">Puschase</button>
+                  </div>
+                  <h6 class="text-center my-4">Functions only once per event.</h6>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <a href="templ/standard1.php"><img src="home/img/2.jpg"width="100%"></a>
-            <h4 class="title"><a href="">Standard</a></h4>
+          <div class="card">
+              <div class="card-header text-center bg-dark">
+                <h4 class="card-title text-white"> <strong>Standard</strong> </h4>
+              </div>
+              <div class="card-header">
+                <h6 class="text-center card-title"> <b>Basic plan</b></h6>
+                <p class="card-text mx-4">For those appreciated plan</p>
+              </div>
+              <div class="card-body list">
+                <ul>
+                  <li class="my-2">Customized wedding web page</li>
+                  <li class="my-2">RSVP registry</li>
+                  <li class="my-2">Event team/vendor links</li>
+                  <li class="my-2">Three(3) days auto-countdown</li>
+
+                </ul>
+                <hr>
+                <div>
+                  <h2 class="text-center"><strong>150,000/= Tsh</strong></h2>
+                  <p class="text-center card-text">per month</p>
+                  <div class="row justify-content-center">
+                    <button type="button" class="btn btn-outline-dark text-uppercase ">Puschase</button>
+                  </div>
+                  <h6 class="text-center my-4">Functions only once per event.</h6>
+                </div>
+              </div>
+            </div>
           </div>
+          
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-          <a href="templ/premium.php"><img src="home/img/3.jpg"width="100%"></a>
-            <h4 class="title"><a href="">Premium</a></h4>
+          <div class="card shadow-lg ">
+              <div class="card-header text-center bg-dark">
+                <h4 class="card-title text-white"> <strong>Premium</strong> </h4>
+              </div>
+              <div class="card-header">
+                <h6 class="text-center card-title"> <b>Basic plan</b></h6>
+                <p class="card-text mx-4">For those appreciated plan</p>
+              </div>
+              <div class="card-body list">
+                <ul>
+                  <li class="my-2">Customized wedding web page</li>
+                  <li class="my-2">RSVP registry</li>
+                  <li class="my-2">Event team/vendor links</li>
+                  <li class="my-2">Customized Guestlis</li>
+                  <li class="my-2">Post Event Analysis</li>
+                  <li class="my-2">Groom  And Bride Profile</li>
+                  <li class="my-2">Seven(7) days auto-countdown</li>
+                </ul>
+                <hr>
+                <div>
+                  <h2 class="text-center"><strong>300,000/= Tsh</strong></h2>
+                  <p class="text-center card-text">per month</p>
+                  <div class="row justify-content-center">
+                    <button type="button" class="btn btn-outline-dark text-uppercase ">Puschase</button>
+                  </div>
+                  <h6 class="text-center my-4">Functions only once per event.</h6>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+          
 
 
         </div>
