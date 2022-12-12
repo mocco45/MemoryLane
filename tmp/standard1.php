@@ -42,6 +42,7 @@ if ($result->num_rows > 0)
     <link href="vendor/slick/slick.css" rel="stylesheet">
     <link href="vendor/slick/slick-theme.css" rel="stylesheet">
     <link href="vendor/flipclock/flipclock.css" rel="stylesheet">
+    
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
