@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>INVITATION</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Memorylane</title>
+        <meta contenIt="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
 
@@ -40,7 +40,7 @@
                     <nav class="main-menu top-menu">
                         <ul>
                             <li class="active"><a href="../dashbord.php">Home</a></li>
-                            <li class="active"><a href="../eform.php">Use</a></li>
+                          
                         </ul>
                     </nav>
                 </header>
@@ -117,12 +117,15 @@
                         </header>
                         <div class="row">
                             <div class="col-6 text-right">
+                            
                                 <h4>Groom Profile.</h4>
                                 <p>24th December,2022, 7:00PM</p>
+                                <img src="img/page-bg.jpg" class="rounded float-right" alt="...">
                             </div>
                             <div class="col-6 text-left">
                                 <h4>Bride Profile.</h4>
                                 <p>Kilimani Hall</p>
+                                <img src="img/page-bg.jpg" class="rounded float-left" alt="...">
                             </div>
                         </div>
                         
@@ -147,58 +150,7 @@
                     </div>
                 </div>
             </section>
-            <!-- Story Section end -->
-            <section class="section section-6">
-                <div id="registry">
-                    <div class="container">
-                        <header class="section-header">
-                            <h3>Wedding Team</h3>
-                        </header>
-                        <div class="row">
-                            <div class="col-12">
-                                <h4>We're fully obligated to serve you in this wedding.<br>Click the button for more information about us </h4>
-                                <form>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Photographer and videographer" />
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Cars Rental" />
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <input type="email" class="form-control" placeholder="Decor" />
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Groom's Suit Dresser" />
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Bride's Dress Dresser" />
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Venue" />
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Master of Ceremony" />
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Caterer" />
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Party Section Start-->
             <section class="section section-4">
                 <div id="party">
                     <div class="container">
@@ -219,6 +171,59 @@
                     </div>
                 </div>
             </section>
+            <!-- Story Section end -->
+            <section class="section section-6">
+                <div id="registry">
+                    <div class="container">
+                        <header class="section-header">
+                            <h3>Wedding Team</h3>
+                        </header>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>We're fully obligated to serve you in this wedding.<br>Click the button for more information about us </h4>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Photo/videographer</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Master of Ceremony</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Groom's Suit Dresser</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Bride's Dress Dresser</button>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                             <button type="button" class="btn btn-primary">Decor personal</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                           <button type="button" class="btn btn-primary">Caterer personel</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Car rental</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Venue</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Party Section Start-->
+            
             <!-- Party Section end -->
 
             <!-- Registry Section Start-->

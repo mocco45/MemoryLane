@@ -109,101 +109,115 @@ include "db/session.php";
             <!-- Blank Start -->
             <div class="container-fluid pt-4 px-4">
                 <!-- Recent Sales Start -->
-                <div class="container-fluid  pt-4 px-4">
-                    <div class="bg-light text-center rounded p-4">
-                        <div class="col-sm-12 col-xl-12">
-                            <?php if (isset($_GET['error'])) { ?>
-                            <script>
-                            Swal.fire({
-                                icon: 'error',
-                                title: 'error',
-                                text: '<?php echo $_GET['error']; ?>'
-                            })
-                            </script>
-                            <?php }?>
-                            <?php if (isset($_GET['success'])) { ?>
-                            <script>
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'success',
-                                text: '<?php echo $_GET['success']; ?>'
-                            })
-                            </script>
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light text-center rounded p-4">
+                   <div class="col-sm-12 col-xl-6">
+                    <?php if (isset($_GET['error'])) { ?>
+                        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'error',
+                text: '<?php echo $_GET['error']; ?>'
+            })
+        </script>
+                    <?php }?>
+                   <?php if (isset($_GET['success'])) { ?> 
+<script>
+            Swal.fire({
+                icon: 'success',
+                title: 'success',
+                text: '<?php echo $_GET['success']; ?>'
+            })
+        </script>
 
-                            <?php } ?>
-                            <div class="bg-light rounded h-100 p-4">
-                                <h3 class="mb-4 text-info">Event Registration</h3>
-                                <form method="POST" action="db/eformpro.php" class="">
-                                    <input type="hidden" id="custId" name="id" value="<?php echo $id; ?>">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="gfn" id="floatingInput">
-                                                <label for="floatingInput">Groom First Name</label>
-                                            </div>
-                                        </div>
+                <?php } ?>
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Event Registration</h6>
+                            <form method="POST" action="db/eformpro.php">
+                                 <input type="hidden" id="custId" name="id" value="<?php echo $id; ?>">
+                                 <div class="row">
+                                    <div class="col">
+                                    <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="gfn" id="floatingInput">
+                                        <label for="floatingInput">Groom First Name</label>
+                                    </div>
+                                    </div>
 
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="gln" id="floatingInput">
-                                                <label for="floatingInput">Groom Last Name</label>
-                                            </div>
-                                        </div>
+                                    <div class="col">
+                                         <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="gln" id="floatingInput">
+                                <label for="floatingInput">Groom Last Name</label>
+                            </div>
+                                    </div>
 
+                                 </div>
+                                 <div class="row">
+                                    <div class="col">
+                                        <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="bfn" id="floatingInput">
+                                <label for="floatingInput">Bride First Name</label>
+                            </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="bfn" id="floatingInput">
-                                                <label for="floatingInput">Bride First Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="bln" id="floatingInput">
-                                                <label for="floatingInput">Bride Last Name</label>
-                                            </div>
-                                        </div>
+                                    <div class="col">
+                                        <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="bln" id="floatingInput">
+                                <label for="floatingInput">Bride Last Name</label>
+                            </div> 
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="date" class="form-control" name="edate" id="floatingInput">
-                                                <label for="floatingInput">Event Date</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="time" class="form-control" name="etime" id="floatingInput">
-                                                <label for="floatingInput">Event Time</label>
-                                            </div>
-                                        </div>
+                                 </div>
+                                <div class="row">
+                                    <div class="col">
+                                      <div class="form-floating mb-3">
+                                <input type="date" class="form-control" name="edate" id="floatingInput">
+                                <label for="floatingInput">Event Date</label>
+                            </div>   
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="eloc" id="floatingInput">
-                                                <label for="floatingInput">Location/Place</label>
-                                            </div>
-                                        </div>
+                                    <div class="col">
+                                        
+                            <div class="form-floating mb-3">
+                                <input type="time" class="form-control" name="etime" id="floatingInput">
+                                <label for="floatingInput">Event Time</label>
+                            </div>
                                     </div>
-                                    <div class="row">
+                                </div>
+                        
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="eloc" id="floatingInput">
+                                <label for="floatingInput">Location/Place</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="gdesc"
+                                    id="floatingTextarea" style="height: 100px;"></textarea>
+                                <label for="floatingTextarea">Groom Description</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" name="bdesc"
+                                    id="floatingTextarea" style="height: 100px;"></textarea>
+                                <label for="floatingTextarea">Bride Description</label>
+                            </div>
+                            </div>
+                            <div class="row">
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-floating mb-3">
-                                                <textarea class="form-control" name="gdesc" id="floatingTextarea"
-                                                    style="height: 100px;"></textarea>
-                                                <label for="floatingTextarea">Groom Description</label>
+                                            <h5>Groom image</h5>
+                                                <input type="hidden" name="Gimage" value="<?php echo $row['eid'] ?>">
+                                            <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                                           
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-12">
+                                            <div class="col-md-6 col-sm-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control" name="bdesc" id="floatingTextarea"
-                                                    style="height: 100px;"></textarea>
-                                                <label for="floatingTextarea">Bride Description</label>
+                                                <h5>Bride image</h5>
+                                                <input type="hidden" name="Bmage" value="<?php echo $row['eid'] ?>">
+                                            <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                                         
+                                          
                                             </div>
                                         </div>
                                     </div>
-                                    <h3 class="mb-4 my-5 text-info">Event Team</h3>
+
+
+                            <h3 class="mb-4 my-5 text-info">Event Team</h3>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-floating mb-3">
@@ -219,7 +233,7 @@ include "db/session.php";
                                                 <label for="floatingInput">Cars Rental</label>
                                             </div>
                                         </div>
-                                    </div>
+                                    
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-floating mb-3">
@@ -265,20 +279,16 @@ include "db/session.php";
                                                     id="floatingInput">
                                                 <label for="floatingInput">Caterer</label>
                                             </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col-md-3 col-sm-5">
-                                <button type="submit" class="btn btn-primary ">Submit</button>
-                                <button type="clear" class="btn btn-primary">Clear</button>
-                            </div>
-
-                        </div>
-                        </form>
+                                    
+                            <h6 class="mb-4">Event Registration</h6>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="clear" class="btn btn-primary">Clear</button>
                     </div>
-
-                </div>
-            </div>
+                </form>
+                        </div>
+                        
+                    </div>
+                </div>                                                                
 
             <!-- Blank End -->
 

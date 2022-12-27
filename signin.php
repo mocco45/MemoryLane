@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Invitation</title>
+    <title>Memorylane</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -68,16 +68,18 @@
                 <?php } ?>
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             
-                            <h3>Sign In</h3>
+                            <h2>Sign In</h2>
+                            <p>Only for admins</p>
                         </div>
                         <div class="form-floating mb-3">
                             <form id="form1" method="POST" action="db/signinpro.php">
                             <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                            <label for="floatingInput"></label>
                         </div>
+                        
                         <div class="form-floating mb-4">
                             <input type="password" class="form-control" name="pass" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                            <label for="floatingPassword"> Admin Password</label>
                         </div>
                     <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
                         <p class="text-center mb-0">Don't have an Account? <a href="signup.php">Sign Up</a></p>

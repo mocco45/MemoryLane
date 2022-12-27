@@ -8,7 +8,7 @@ $uid=$_SESSION['userid'];
 
 <head>
     <meta charset="utf-8">
-    <title>Invite</title>
+    <title>Memorylane</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -129,33 +129,7 @@ $uid=$_SESSION['userid'];
             <!-- Sale & Revenue End -->
 
   <!-- Recent Sales Start -->
-   <div class="container-fluid pt-4 px-4">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-                   <a href="templ/basic1.php"><img src="img/1.jpg"width="90%"></a>
-            <h4 class="title"><a href="">Basic</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-                    <a href="templ/standard1.php"><img src="img/2.jpg"width="90%"></a>
-            <h4 class="title"><a href="">Standard</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-                    <a href="templ/premium1.php"><img src="img/3.jpg"width="90%"></a>
-            <h4 class="title"><a href="">Premium</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"  data-wow-duration="1.4s">
-                    <a href="templ/basic1.php"><img src="img/2.jpg"width="90%"></a>
-            <h4 class="title"><a href="">Basic</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"  data-wow-duration="1.4s">
-                    <a href="templ/standard1.php"><img src="img/3.jpg"width="90%"></a>
-            <h4 class="title"><a href="">Standard</a></h4>
-                </div>
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s"  data-wow-duration="1.4s">
-                   <a href="templ/premium1.php"><img src="img/1.jpg"width="90%"></a>
-            <h4 class="title"><a href="">Premium</a></h4>
-                </div>
-            </div></div>
+
             <!-- Recent Sales End -->
 
             <!-- Footer Start -->

@@ -7,7 +7,7 @@ include "db/session.php";
 
 <head>
     <meta charset="utf-8">
-    <title>Invite</title>
+    <title>Memorylane</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -125,13 +125,15 @@ include "db/session.php";
         </script>
 
                 <?php } ?>
-                            <thead>
+                <thead>
                                     <th scope="col">Groom Name</th>
                                     <th scope="col">Bride Name</th>
                                     <th scope="col">Event Date</th>
                                     <th scope="col">Location</th>
                                     <th scope="col">Groom Description</th>
                                     <th scope="col">Bride Description</th>
+                                    <th scope="col">Groom Image</th>
+                                    <th scope="col">Bride Image</th>
                                     <th scope="col">Upload Image</th>
                                     <th scope="col">Preview</th>
                                 </tr>
@@ -156,6 +158,26 @@ if ($result->num_rows > 0) {
                                     <td><?php echo $row['gdescription'];?></td>
                                     <td><?php echo $row['bdescription'];?></td>
                                     <td>
+                                    <div class="mb-3">
+
+                                      <form action="db/imagepro.php"method="post"enctype="multipart/form-data">
+                                      <input type="hidden" name="Gimage" value="<?php echo $row['Gimage'] ?>">
+                                         <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                                                 </div>
+                                                  <button type="submit" class="btn btn-primary">Upload</button>
+                                                     </form>
+                                            </td>
+                                            <td>
+                                    <div class="mb-3">
+
+                                      <form action="db/imagepro.php"method="post"enctype="multipart/form-data">
+                                      <input type="hidden" name="Bmage" value="<?php echo $row['Bmage'] ?>">
+                                         <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                                                 </div>
+                                                  <button type="submit" class="btn btn-primary">Upload</button>
+                                                     </form>
+                                            </td>
+                                    <td>
                                         <div class="mb-3">
 
                                             <form action="db/imagepro.php"method="post"enctype="multipart/form-data">
@@ -165,6 +187,7 @@ if ($result->num_rows > 0) {
                                             <button type="submit" class="btn btn-primary">Upload</button>
                                             </form>
                                     </td>
+                                  
                                     <td><a href="<?php echo 'tmp/'.$row['file_location'];?>?id=<?php echo $row['eid'] ?>">Preview</a></td>
                                 </tr> <?php  
 } }

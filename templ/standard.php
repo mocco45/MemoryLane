@@ -6,7 +6,7 @@ $page = basename($path);
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>INVITATION</title>
+        <title>Memorylane</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -44,7 +44,7 @@ $page = basename($path);
                     <nav class="main-menu top-menu">
                         <ul>
                             <li class="active"><a href="../dashbord.php">Home</a></li>
-                            <li class="active"><a href="../eform.php?id=<?php echo $page;?>">Use</a></li>
+                           
                         </ul>
                     </nav>
                 </header>

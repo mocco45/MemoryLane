@@ -6,7 +6,7 @@ $page = basename($path);
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>INVITATION</title>
+        <title>Memorylane</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -43,9 +43,9 @@ $page = basename($path);
                     <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
                     <nav class="main-menu top-menu">
                         <ul>
-                            <li class="active"><a href="../dashbord.php">Home</a></li>
+                            <li class="active"><a href="../index.php">Home</a></li>
 
-                            <li class="active"><a href="../eform.php?id=<?php echo $page;?>">Use</a></li>
+                            <li class="active"><a href="../dashbord.php">Use</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -119,6 +119,55 @@ $page = basename($path);
                 </div>
             </section>
             <!-- Party Section end -->
+            <section class="section section-6">
+                <div id="registry">
+                    <div class="container">
+                        <header class="section-header">
+                            <h3>Wedding Team</h3>
+                        </header>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>We're fully obligated to serve you in this wedding.<br>Click the button for more information about us </h4>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Photo/videographer</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Master of Ceremony</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Groom's Suit Dresser</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Bride's Dress Dresser</button>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                             <button type="button" class="btn btn-primary">Decor personal</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                           <button type="button" class="btn btn-primary">Caterer personel</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Car rental</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <button type="button" class="btn btn-primary">Venue</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- Registry Section Start-->
             <section class="section section-6">
@@ -167,22 +216,7 @@ $page = basename($path);
             <!-- Registry Section end -->
 
            
-            <!-- CountDown Section Start-->
-            <section class="section section-8">
-                <div id="clock">
-                    <div class="container">
-                        <header class="section-header">
-                            <h3>Days Left</h3>
-                        </header>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="clock"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- CountDown Section end -->
+           
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
             <!-- Uncomment below i you want to use a preloader -->
