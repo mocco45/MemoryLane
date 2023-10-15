@@ -81,8 +81,8 @@
             <div class="carousel-background"><img src="img/mem1 (4).jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>We plan you ceremony in a digital way.</h2>
-                <p>Memorylane issue easy design and plan of your ceremony .......... </p>
+                <h2>Lets' take your event to another level. </h2>
+                
               </div>
             </div>
           </div>
@@ -91,8 +91,7 @@
             <div class="carousel-background"><img src="img/mem1 (3).jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>We are professional</h2>
-                <p>Printing and Desgn Card in degital way........... </p>
+                <h2>Make your event invitation digital.</h2>
               </div>
             </div>
           </div>
@@ -120,23 +119,23 @@
       <div class="container">
 
         <header class="section-header wow fadeInUp">
-          <h3> Memorylane plan</h3>
+          <h3> MEMORYLANE PLANS</h3>
           
         </header>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <a href="templ/basic.php"><img src="home/img/1.jpg" width="100%"></a>
-            <h4 class="title"><a href="templ/basic.php">Basic</a></h4>
+            <a href="templB/basic1.php"><img src="home/img/1.jpg" width="100%"></a>
+            <h4 class="title"><a href="templB/basic1.php">Basic demo</a></h4>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <a href="templ/standard.php"><img src="home/img/2.jpg"width="100%"></a>
-            <h4 class="title"><a href="templ/stanadard.php">Standard</a></h4>
+            <a href="templS/standard.php"><img src="home/img/2.jpg"width="100%"></a>
+            <h4 class="title"><a href="templS/stanadard.php">Standard demo</a></h4>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-          <a href="templ/premium.php"><img src="home/img/3.jpg"width="100%"></a>
-            <h4 class="title"><a href="templ/premium.php">Premium</a></h4>
+          <a href="templP/premium.php"><img src="home/img/3.jpg"width="100%"></a>
+            <h4 class="title"><a href="templP/premium.php">Premium demo</a></h4>
           </div>
 
 
@@ -154,7 +153,7 @@
       <div class="container">
 
         <header class="section-header wow fadeInUp">
-          <h3>Pricing Plan</h3>
+          <h3>Prices</h3>
         
         </header>
 
@@ -165,14 +164,14 @@
                 <h4 class="card-title text-white "> <strong>Basic</strong> </h4>
               </div>
               <div class="card-header">
-                <h6 class="text-center card-title"> <b>Basic plan</b></h6>
-                <p class="card-text mx-4">For those appreciated plan</p>
+                <h6 class="text-center card-title"> <b>Package offered.</b></h6>
               </div>
               <div class="card-body list">
                 <ul>
                   <li class="my-2">Customized wedding web page</li>
                   <li class="my-2">RSVP registry</li>
                   <li class="my-2">Event team/vendor links</li>
+                  <li class="my-2">Page active for three (3) months </li>
                 </ul>
                 <hr>
                 <div>
@@ -192,16 +191,15 @@
                 <h4 class="card-title text-white"> <strong>Standard</strong> </h4>
               </div>
               <div class="card-header">
-                <h6 class="text-center card-title"> <b>Basic plan</b></h6>
-                <p class="card-text mx-4">For those appreciated plan</p>
+                <h6 class="text-center card-title"> <b>Package offered.</b></h6>
               </div>
               <div class="card-body list">
                 <ul>
                   <li class="my-2">Customized wedding web page</li>
                   <li class="my-2">RSVP registry</li>
                   <li class="my-2">Event team/vendor links</li>
-                  <li class="my-2">Three(3) days auto-countdown</li>
-
+                  <li class="my-2">Days left auto-countdown</li>
+                  <li class="my-2">Page active for three (3) months </li>
                 </ul>
                 <hr>
                 <div>
@@ -216,15 +214,14 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
           <div class="card shadow-lg ">
               <div class="card-header text-center bg-dark">
                 <h4 class="card-title text-white"> <strong>Premium</strong> </h4>
               </div>
               <div class="card-header">
-                <h6 class="text-center card-title"> <b>Basic plan</b></h6>
-                <p class="card-text mx-4">For those appreciated plan</p>
+                <h6 class="text-center card-title"> <b>Package offered.</b></h6>
               </div>
               <div class="card-body list">
                 <ul>
@@ -232,9 +229,10 @@
                   <li class="my-2">RSVP registry</li>
                   <li class="my-2">Event team/vendor links</li>
                   <li class="my-2">Customized Guestlis</li>
-                  <li class="my-2">Post Event Analysis</li>
+                  <li class="my-2">Digital invitation cards </li>
                   <li class="my-2">Groom  And Bride Profile</li>
-                  <li class="my-2">Seven(7) days auto-countdown</li>
+                  <li class="my-2">Days left auto-countdown</li>
+                  <li class="my-2">Page active for six (6) months </li>
                 </ul>
                 <hr>
                 <div>
@@ -255,6 +253,46 @@
         </div>
 
       </div>
+    </section><!-- #services -->   
+
+
+    <section id="card">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Digital invitation Card</h3>
+        
+        </header>
+
+        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <div class="card" >
+              <div class="card-header text-center bg-dark">
+                <h4 class="card-title text-white"> <strong>Invitation Card</strong> </h4>
+              </div>
+              <div class="card-header">
+                <h6 class="text-center card-title"> <b>Services offered.</b></h6>
+              </div>
+              <div class="card-body list">
+                <ul>
+                  <li class="my-2">QR codede Invitation card</li>
+                  <li class="my-2">Virtual Check in System</li>
+                  <li class="my-2">QR Code scanner API</li>
+                  <li class="my-2">Post Event Analysis</li>
+                 
+                </ul>
+                <hr>
+                <div>
+                  <h2 class="text-center"><strong></strong></h2>
+                  <p class="text-center card-text">Contact Us For price</p>
+                  <div class="row justify-content-center">
+                  <a class="btn btn-secondary btn-lg " href="payment.php" role="button">per Event</a>
+                  
+                  </div>
+                  <h6 class="text-center my-4">Functions only once per event.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
     </section><!-- #services -->   
 
     <!--==========================
@@ -314,7 +352,7 @@
                 <div class="section-title ml-lg-5">
                     <h3 style="color: blue;">About Us</h3>
                     <p>
-                    Memory lane is the best online platform designed for easier, cheaper, unique and complacent digital invitation experience for events such as weddings, birthdays and engagements providing.<br> The platform was etablished in late 2022 and looks to grow rapidly to open up branches and provide its services all over the country. With so many modern couples looking for ways to save money and simplify their wedding and event plans, it’s no surprise that more couples are turning to online wedding invitations and memory lane is the best solution for modern event invitations.</p>
+                    Memory lane is the best online platform designed for easier, cheaper, unique and complacent digital invitation experience for events such as weddings, birthdays,engagements,concert,etc.<br> The platform was etablished in late 2022 and looks to grow rapidly to open up branches and provide its services all over the country. With so many modern couples looking for ways to save money and simplify their wedding and event plans, it’s no surprise that more couples are turning to online wedding invitations and memory lane is the best solution for modern event invitations.</p>
                    
                      
                     </div>

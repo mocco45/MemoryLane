@@ -133,8 +133,7 @@ include "db/session.php";
                 <?php } ?>
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4">Event Registration</h6>
-                            <form method="POST" action="db/eformpro.php">
-                                 <input type="hidden" id="custId" name="id" value="<?php echo $id; ?>">
+                            <form method="post" action="db/eformpro.php" enctype="multipart/form-data">
                                  <div class="row">
                                     <div class="col">
                                     <div class="form-floating mb-3">
@@ -168,7 +167,7 @@ include "db/session.php";
                                 <div class="row">
                                     <div class="col">
                                       <div class="form-floating mb-3">
-                                <input type="date" class="form-control" name="edate" id="floatingInput">
+                                <input type="date" class="form-control" name="edate" min="<?php echo date('Y-m-d'); ?> id="floatingInput">
                                 <label for="floatingInput">Event Date</label>
                             </div>   
                                     </div>
@@ -186,30 +185,19 @@ include "db/session.php";
                                 <label for="floatingInput">Location/Place</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" name="gdesc"
+                                <textarea class="form-control" name="message"
                                     id="floatingTextarea" style="height: 100px;"></textarea>
-                                <label for="floatingTextarea">Groom Description</label>
+                                <label for="floatingTextarea">Invitation Message</label>
                             </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" name="bdesc"
-                                    id="floatingTextarea" style="height: 100px;"></textarea>
-                                <label for="floatingTextarea">Bride Description</label>
+                            
                             </div>
-                            </div>
-                            <div class="row">
+                            <div class="row d-flex justify-content-center">
+                                       
                                         <div class="col-md-6 col-sm-12">
-                                            <div class="form-floating mb-3">
-                                            <h5>Groom image</h5>
-                                                <input type="hidden" name="Gimage" value="<?php echo $row['eid'] ?>">
-                                            <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
-                                           
-                                            </div>
-                                        </div>
-                                            <div class="col-md-6 col-sm-12">
                                             <div class="form-floating">
-                                                <h5>Bride image</h5>
+                                                <h5>Cover image</h5>
                                                 <input type="hidden" name="Bmage" value="<?php echo $row['eid'] ?>">
-                                            <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                                            <input class="form-control" type="file" name="image1" id="fileToUpload">
                                          
                                           
                                             </div>
@@ -221,14 +209,14 @@ include "db/session.php";
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="photographer"
+                                                <input type="text" class="form-control" name="photographer" 
                                                     id="floatingInput">
-                                                <label for="floatingInput">Photographer and Videographer</label>
+                                                <label for="floatingInput">Photographer</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" name="carRental "
+                                                <input type="text" class="form-control" name="car"
                                                     id="floatingInput">
                                                 <label for="floatingInput">Cars Rental</label>
                                             </div>
@@ -281,7 +269,7 @@ include "db/session.php";
                                             </div>
                                     
                             <h6 class="mb-4">Event Registration</h6>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                             <button type="clear" class="btn btn-primary">Clear</button>
                     </div>
                 </form>

@@ -1,6 +1,6 @@
 <?php
-$path = $_POST['id'];
-//$newDate = date("d-m-Y", strtotime($orgDate));  
+// $path = $_POST['id'];
+// //$newDate = date("d-m-Y", strtotime($orgDate));  
 session_start(); 
 include "db_conn.php";
 
@@ -21,53 +21,79 @@ $bln = ucfirst($_POST['bln']);
 $edate = validate($_POST['edate']);
 $etime = validate($_POST['etime']);
 $eloc = ucfirst($_POST['eloc']);
-$gdesc = ucfirst($_POST['gdesc']);
-$bdesc = ucfirst($_POST['bdesc']); 
 $photographer = ucfirst($_POST['photographer']); 
-$carRental = ucfirst($_POST['carRental']); 
+$car = ucfirst($_POST['car']); 
 $decor = ucfirst($_POST['decor']); 
 $suitDresser = ucfirst($_POST['suitDresser']); 
 $dressDresser = ucfirst($_POST['dressDresser']); 
 $venue = ucfirst($_POST['venue']); 
 $ceremony = ucfirst($_POST['ceremony']); 
-$catere = ucfirst($_POST['caterer']); 
-
-
-
-
+$catere = ucfirst($_POST['caterer']);
+$msg = ucfirst($_POST['message']);
 
 $userid=$_SESSION['userid'];
 
     $user_data = 'name ='. $gfn. '& name='. $gfn;
 
     if (empty($gfn)) {//echo "jaza fomu ";
-        header("Location: ../eform.php?error=Complite Form");
+        header("Location: ../eform.php?error=Empty Field");
         exit();
     }
     else{ 
         
-        $sql = "SELECT * FROM event WHERE gfname='$gfn' OR glname='gln' ";
+        $sql = "SELECT * FROM event_basic WHERE gfname='$gfn' OR glname='gln' ";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) { //echo "yupo ipo";
             header("Location: ../eform.php?error= Groom Details Exist");
             exit();
         }else {
-      $sql2 = "INSERT INTO event (gfname,glname,bfname,blname,edate,gdescription,bdescription,etime,eloc,userid,file_location,photographer,carRental,decor,suitDresser,dressDresser,venue,ceremony,caterer ) 
-      						VALUES('$gfn','$gln','$bfn','$bln','$edate','$gdesc','$bdesc','$etime','$eloc','$userid','$path','$photographer','$carRental','$decor','$suitDresser','$dressDresser','$venue','$ceremony','$caterer')";
+    if(isset($_POST['submit']) && !empty($_FILES['image1']['name'])){
+
+        $filename2  = $_FILES['image1']['name'];
+
+        $img_exts2 = pathinfo($filename2,PATHINFO_EXTENSION);
+    
+            if($img_exts2  == "jpg" || $img_exts2  == "png" || $img_exts2  == "jpeg"  ){        
+            
+                $name2  = "pic2.$img_exts2";
+                $img_upload_paths = '../uploads/'.$name2;
+                $img_upload_paths1 = '../uploads/pic2.png';
+                $img_upload_paths2 = '../uploads/pic2.jpg';
+                $img_upload_paths3 = '../uploads/pic2.jpeg';
+                if (file_exists($img_upload_paths1)) {
+                    unlink($img_upload_paths1);
+               }
+               
+                if (file_exists($img_upload_paths2)) {
+                unlink($img_upload_paths2);
+                }
+            
+               if (file_exists($img_upload_paths3)) {
+                unlink($img_upload_paths3);
+               }   
+            $tmp_names2 = $_FILES['image1']['tmp_name'];
+            move_uploaded_file($tmp_names2, $img_upload_paths);
+            }
+       
+        else{
+        echo "file ".$filename2  = $_FILES['image1']['name']." does not contain allowed extension upload again";
+        }
+        }
+
+      $sql2 = "INSERT INTO event_basic (gfname,glname,bfname,blname,edate,etime,eloc,userid,photographer,car,decor,suitDresser,message,dressDresser,venue,ceremony,caterer,cover_img) 						
+                VALUES('$gfn','$gln','$bfn','$bln','$edate','$etime','$eloc','$userid','$photographer','$car','$decor','$suitDresser','$msg','$dressDresser','$venue','$ceremony','$catere','$name2')";
                               
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) { //echo "done";
              header("Location: ../event.php?success=Your Event has been created successfully");
              exit();
            }else {//echo "bado";
-                header("Location: ../eform.php?error=unknown error occurred&$user_data");
+                header("Location: ../eform.php?error=Failed&$user_data");
                 exit();
            }
         }
         }}
-   else{ //echo "mzigo umegoma";
-    header("Location: eform.php");
-    exit();
-}       
+    exit();  
+
 ?>

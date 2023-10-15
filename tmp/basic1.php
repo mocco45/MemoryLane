@@ -3,7 +3,7 @@ include "../db/db_conn.php";
 include "../db/session.php";
 if (isset($_GET['id'])) { $id= $_GET['id']; }
 $ids=$_SESSION['userid'];
-$sql = "SELECT * FROM event WHERE eid ='$id'";
+$sql = "SELECT * FROM event_basic WHERE eid ='$id'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) 
 {
@@ -11,11 +11,14 @@ if ($result->num_rows > 0)
   while($row = $result->fetch_assoc())
    {
     ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>INVITATION</title>
+        <title>Memorylane</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -38,7 +41,8 @@ if ($result->num_rows > 0)
         <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="vendor/slick/slick.css" rel="stylesheet">
         <link href="vendor/slick/slick-theme.css" rel="stylesheet">
-        <link href="vendor/flipclock/flipclock.css" rel="stylesheet">
+        <script src="vendor/fullpage/fullpage.min.js"></script>
+
 
         <!-- Main Stylesheet File -->
         <link href="css/style.css" rel="stylesheet">
@@ -66,7 +70,7 @@ if ($result->num_rows > 0)
                             <div class="carousel-inner" role="listbox">
 
                                 <div class="carousel-item active">
-                                    <div class="carousel-background"><img src="../img/slide/<?php echo $row['image']?>" alt="" width="100%"></div>
+                                    <div class="carousel-background"><img src="../uploads/<?php echo $row['cover_img']?>" alt="" width="100%"></div>
                                     <div class="carousel-container">
                                         <div class="carousel-content">
                                             <h1><?php echo $row['gfname']?></h1>
@@ -74,6 +78,7 @@ if ($result->num_rows > 0)
                                             <h1><?php echo $row['bfname']?></h1>
                                             <h4>We are Getting Married</h4>
                                             <h4><?php echo date("jS F Y", strtotime($row['edate']))?></h4>
+                                            
                                     </div>
                                     </div>
                                 </div>
@@ -90,24 +95,49 @@ if ($result->num_rows > 0)
                 <div id="story">
                     <div class="container">
                         <header class="section-header">
-                            <h3>Invitation Message</h3>
+                            <h3>Invitation message</h3>
                         </header>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4>We are Getting Married</h4>
                                 <p>
-                                    <?php echo $row['gdescription']." & ".$row['bdescription']?>
+                               <?php echo $row['message'];?>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+             <!-- Party Section Start-->
+             <section class="section section-4">
+                <div id="party">
+                    <div class="container">
+                        <header class="section-header">
+                            <h3>The Wedding</h3>
+                        </header>
+                        <div class="row">
+                            <div class="col-6 text-right">
+                                <h4>When</h4>
+                        <p><?php echo date("jS \of F Y", strtotime($row['edate']))." ".date("H:i", strtotime($row['etime']))?></p>
+                            </div>
+                            <div class="col-6 text-left">
+                                <h4>Where</h4>
+                                <p><?php echo $row['eloc']?></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- Party Section end -->
+
+
             <!-- Story Section end -->
             <section class="section">
                 <div class="container">
                     <header class="section-header">
-                        <h3>Event Team</h3>
+                        <h3>Wedding Team</h3>
                     </header>
                     <div class="row text-center">
                         <div class="col-12">
@@ -125,7 +155,7 @@ if ($result->num_rows > 0)
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <a href="http://www.instagram.com/<?php echo $row['carRental'] ?>" target="_blank">
+                                        <a href="http://www.instagram.com/<?php echo $row['car'] ?>" target="_blank">
                                             <button type="button" class=" btn col-12">Cars Rental</button>
                                         </a>
                                     </div>
@@ -154,45 +184,12 @@ if ($result->num_rows > 0)
                                         </a>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center my-4 mx-auto">
-                                    <div class="col-md-4 col-sm-12 pb-3">
-                                        <a href="http://www.instagram.com/<?php echo $row['ceremony'] ?>" target="_blank">
-                                            <button  class="btn col-12">Master of Ceremony</button>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <a href="http://www.instagram.com/<?php echo $row['caterer'] ?>" target="_blank">
-                                            <button type="button" class=" btn col-12">Caterer</button>
-                                        </a>
-                                    </div>
-                                </div>
                                 </div> 
 
-            </div>
-        </section>
+                            </div>
+                        </section>
 
-            <!-- Party Section Start-->
-            <section class="section section-4">
-                <div id="party">
-                    <div class="container">
-                        <header class="section-header">
-                            <h3>The Wedding</h3>
-                        </header>
-                        <div class="row">
-                            <div class="col-6 text-right">
-                                <h4>When</h4>
-                        <p><?php echo date("jS \of F Y", strtotime($row['edate']))." ".date("H:i", strtotime($row['etime']))?></p>
-                            </div>
-                            <div class="col-6 text-left">
-                                <h4>Where</h4>
-                                <p><?php echo $row['eloc']?></p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <!-- Party Section end -->
+           
 
             <!-- Registry Section Start-->
             <section class="section section-6">
@@ -225,7 +222,7 @@ if ($result->num_rows > 0)
                     <h4>We're So Excited To Celebrate With You</h4>
                      <form id="form4" method="POST" action="../db/rsvppro.php">
                         <input type="hidden" class="form-control" name ="eid" value="<?php echo $id?>">
-                        <input type="hidden" class="form-control" name ="eloc" value="<?php echo $row['file_location'];?>">
+                        
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <input type="text" class="form-control" name ="fname" placeholder="First Name" />
@@ -258,60 +255,30 @@ if ($result->num_rows > 0)
                 </div>
             </section>
             <!-- Registry Section end -->
-            <!-- Vendor Section Start-->
-            <section class="section section-4">
-                <div id="party">
-                    <div class="container">
-                        <header class="section-header">
-                            <h3>Event Vendors</h3>
-                        </header>
-                        <div class="row">
-                            <div class="table-responsive">
-                       
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                    <th scope="col">Event Servce</th>
-                                    <th scope="col">Event Servce</th>
-                                    <th scope="col">Event Servce</th>
-                                   
-                                    
-                                </tr>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                    <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    
-                                
-                                    </tr> 
-                            </tbody>
-                        </table>
-                            </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <!-- Vendor Section end -->
 
-           
-            <!-- CountDown Section Start-->
-            <section class="section section-8">
-                <div id="clock">
-                    <div class="container">
-                        <header class="section-header">
-                            <h3>Days Left</h3>
-                        </header>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="clock">s</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- CountDown Section end -->
+            <script>
+                 new fullpage("#full-page", {
+                        scrollBar: true,
+                        scrollingSpeed: 500,
+                        autoScrolling: true,
+                        fitToSection: true,
+                        navigation: true,
+                        navigationPosition: "left",
+                        paddingTop: "0",
+                        paddingBottom: "0",
+                        verticalCentered: true,
+                        showActiveTooltip: false,
+                        navigationTooltips: [
+                            "HOME",
+                            "INVITATION",
+                            "THE WEDDING",
+                            "WEDDING TEAM",
+                            "REGISTRY",
+                        ],
+                        sectionsColor: ["#ffffff"],
+                    });
+            </script>
+            
 <?php
 }}
 else { echo "no data";
@@ -328,7 +295,6 @@ else { echo "no data";
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/jquery/jquery-migrate.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/fullpage/fullpage.min.js"></script>
         <script src="vendor/easing/easing.min.js"></script>
         <script src="vendor/superfish/hoverIntent.js"></script>
         <script src="vendor/superfish/superfish.min.js"></script>
@@ -337,6 +303,7 @@ else { echo "no data";
         <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
         <script src="vendor/slick/slick.min.js"></script>
         <script src="vendor/flipclock/flipclock.min.js"></script>
+
 
         <!-- Main Javascript File -->
         <script src="js/main.js"></script>

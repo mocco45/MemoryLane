@@ -129,7 +129,25 @@ $uid=$_SESSION['userid'];
             <!-- Sale & Revenue End -->
 
   <!-- Recent Sales Start -->
+  <div class="row">
 
+<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+  <a href="eform.php"><img src="home/img/1.jpg" width="100%"></a>
+  <h4 class="title"><a href="templ/eform.php">Basic</a></h4>
+</div>
+<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+  <a href="eform-standard.php"><img src="home/img/2.jpg"width="100%"></a>
+  <h4 class="title"><a href="eform-standard.php">Standard</a></h4>
+</div>
+<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+<a href="eform-premium.php"><img src="home/img/3.jpg"width="100%"></a>
+  <h4 class="title"><a href="eform-premium.php">Premium</a></h4>
+</div>
+
+
+</div>
+
+</div>
             <!-- Recent Sales End -->
 
             <!-- Footer Start -->

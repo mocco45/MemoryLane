@@ -5,4 +5,5 @@ if($_SESSION['username'])
 
 }
 else header("Location: logout.php");
+
 ?>
